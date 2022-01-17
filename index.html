@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Speen</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div class="container" id="top">
+                <h1>Two-Factor Authentication</h1>
+                <br><p id="warning" style='background: red; padding: 8px;'>This browser does not support device orientation.</p>
+            </div>
+            <div class="container" id="bottom">
+                <p>Please enter the verification code that was sent to 555-555-5555.</p>
+                <small>To prevent keyloggers from stealing your verification code, use the dial below to enter the code by spinning your device.</small>
+                <div id="dialContainer">
+                    <input type="text" disabled="disabled" id="codeInput" ; />
+                    <div id="selected" style="font-size: 24px;"></div>
+                    <i style="font-size: 32px;" class="fa fa-caret-down"></i>
+                    <div id="dial">
+                        <div class="dialText"></div>
+                    </div>
+                    <button type="button" onclick="if (gyroPresent == true) { addChar(); }" id="addButton"><i class="fa fa-plus"></i></button>
+                </div>
+                <br>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

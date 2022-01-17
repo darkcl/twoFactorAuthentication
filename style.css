@@ -1,0 +1,83 @@
+html {
+    font-family: Verdana,sans-serif;
+
+}
+body {
+    background: #020f23;
+    color: white;
+}
+#wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.container {
+    padding: 0 10%;
+}
+h1 {
+    font-size: 32px;
+    color: #ffe666;
+}
+#bottom {
+    background: #152f56;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    font-size: 16px;
+}
+small {
+    color: #b4c7d9;
+}
+#codeInput {
+    background: #1b3d6f;
+    height: 36px;
+    border: none;
+    border-bottom: 2px solid white;
+    margin: 16px;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+#dialContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+    background: #1b3d6f;
+    font-size: 32px;
+    color: white;
+    margin: 16px;
+}
+button:active:focus {
+    background: #37619e;
+}
+#dial {
+    background: #1b3d6f;
+    border: solid 4px #1b3d6f;
+    border-radius: 50%;
+    text-align: center;
+    width: 256px;
+    height: 256px;
+    transform: rotate(0deg);
+    user-select: none;
+}
+.dialText {
+    display: inline-block;
+    margin-bottom: 128px;
+    color: #b4c7d9;
+    font-size: 24px;
+}
+@media screen and (max-width: 728px) {
+    .container {
+        padding: 0 4%;
+    }
+}
