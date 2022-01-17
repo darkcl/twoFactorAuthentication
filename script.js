@@ -8,7 +8,6 @@ function changeOrientation(event) {
     gyroPresent = true;
 
     const letters = "0123456789YN0";
-    var absolute = event.absolute;
     var alpha = Math.round(event.alpha * 10) / 10;
     var index = Math.round(alpha / 30);
     var spin = alpha - 5; //this just makes the arrow on the dial look more accurate
